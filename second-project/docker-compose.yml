@@ -1,0 +1,10 @@
+services:
+  second-project-client:
+    image: curlimages/curl:latest
+    networks:
+      - my_shared_network
+
+networks:
+  my_shared_network:
+    name: my_shared_network
+    external: true
